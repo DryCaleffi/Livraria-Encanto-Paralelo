@@ -1,0 +1,274 @@
+/*
+Aba de estilização do site da Livraria Encanto Paralelo
+Aba de inicio
+@ Adryelle Caroline de  Souza Calefi
+@Tabata Etiele Roberto da Silva
+*/
+
+/*Adiciona no "corpo do site a imagem, como o protótipo*/
+body {
+    background-image: url('imagens/transferir.jpeg'); /* Caminho da imagem, link da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela ou seja ele expandi para toda a tela */
+    background-position: center; /* Centraliza a imagem, o eixo dela ficar correto */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 100%; /* Garante que o fundo ocupe toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    
+}
+/*Adicionando aba com a cor preta com 50% de opacidade, para que fique um pouco mais escura*/
+body::before {
+    content: ""; /* Elemento vazio */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
+    z-index: -1; /* Mantém atrás do conteúdo */
+}
+
+/* Edição da Barra superior fixa */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6%; /* Altura da barra */
+    width: 100%; /* Largura total, ocupa a tela inteira */
+    background-color: #c6a270; /* Cor de fundo */
+    z-index: 1000; /* Fixa acima do conteúdo */
+    display: flex; /* Garante que o conteúdo da barra use flexbox */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: right; /* Espaça os itens de forma igual */
+    padding: 0 20px; /* Ajuste de margens laterais */
+}
+
+/* Edição do menu de navegação */
+    .nav-bar {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+/* Estilizando a lista de itens de navegação, tirando os botões da lista ordenada */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            justify-content: right;
+            margin: 0; /* Remove margens externas */
+            gap: 20px; /* Define um espaçamento uniforme entre os itens */
+        }
+
+/* Estilizando os itens do menu de navegação */
+        .nav-menu li {
+            margin-right: 20px; /* Espaçamento entre os itens */
+        }
+
+        /* Estilo dos links de navegação */
+        .nav-link {
+            text-decoration: none; /* Remove o sublinhado do texto */
+            color: white !important; /* Cor do texto */
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 14px; /* Tamanho da fonte */
+            padding: 10px 15px; /* Ajusta o espaçamento interno */
+            display: flex; /* Usa flexbox */
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
+            height: 100%; /* Garante que ocupe toda a altura do item */
+            line-height: normal; /* Evita que o texto fique desalinhado */
+        }
+        /* Efeito de hover e item ativo */
+        .nav-link:hover, .nav-link.active {
+            background-color: #734e27; /* Cor de fundo ao passar o mouse */
+            border-radius: 50%; /* Borda arredondada */
+        }
+
+        /* Estilo da imagem (ícone) */
+        .nav-icon {
+            width: 40px;
+            height: 40px;
+        }
+        .nav-text {
+            font-size: 20px;
+            font-family: cormorant garamond;
+            color: white;
+            margin-left: auto; /* Faz com que o texto fique à direita */
+            padding-right: 20px; /* Espaço à direita */
+            justify-content: left !important;
+        }
+        .nav-icon-home{
+            width: 40px; /* Define o tamanho da imagem */
+            height: 40px; /* Define a altura da imagem */
+            margin-right: 10px; /* Espaço entre a imagem e o texto */
+        }
+
+        /* Espaço para compensar a barra fixa */
+        .content {
+            padding-top: 80px; /* Ajuste dependendo da altura da barra */
+        }
+        /* Personalizando o botão do dropdown, borão da pagina e contato*/
+        .dropdown-toggle {
+            background-color: transparent !important; /* Cor de fundo */
+            color: white !important; /* Cor do texto */
+            font-family: comorant garamond !important;
+            padding: 0px !important; /* Espaçamento */
+            margin-top: auto;
+            border-radius: 5px !important; /* Borda arredondada */
+            border: none !important; /* Remove a borda */
+            cursor: pointer !important; /* Cursor de clique */
+        }
+
+        /* Efeito hover no botão */
+        .dropdown-toggle:hover {
+            background-color: #5a3b1c !important;
+        }
+
+        /* Personalizando o menu do dropdown */
+        .dropdown-menu {
+            background-color: #c6a270 !important;
+            border-radius: 5px !important;
+            border: 1px solid #734e27 !important;
+        }
+
+        /* Personalizando os itens do dropdown */
+        .dropdown-item {
+            color: white !important;
+            padding: 10px 15px !important;
+            font-family: cormorant garamond !important;
+        }
+
+        /* Efeito hover nos itens */
+        .dropdown-item:hover {
+            background-color: #734e27 !important;
+            color: white !important;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        /*editando o modal de Login*/
+        h2 {
+            font-size: 20px;
+            color: white !important;
+            margin-bottom: 20px;
+        }
+        .Aba_Login {
+            background: none; /* Remove o fundo */
+            border: none; /* Remove a borda */
+            padding: 0; /* Remove padding extra */
+            cursor: pointer;
+        }
+
+        .Aba_Login img {
+            width: 40px; /* Ajuste o tamanho conforme necessário */
+            height: 40px;
+        }
+        .btnLogin{
+            background-color: #7cd783 !important;
+            border-color: #3d7727 !important;
+            font-family: comorant garamond  !important;
+            
+        }
+        .btncadastro{
+            background-color: #7cc6d7 !important;
+            border-color: #274e77 !important;
+            font-family: comorant garamond  !important;
+        }
+        .modal {
+            background: rgba(0, 0, 0, 0.5) !important; /* Fundo escuro transparente */
+        }
+
+        .modal-dialog {
+            background: white !important; /* Garante que o modal em si fique branco */
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+
+
+
+/*Adicionar fonte e tamanho do texto inicial, centralizar ele ao meio da tela, como texto inicial*/
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #FFFFFF !important; /* Cor do texto */
+    font-size: 320%;  /* Ajuste para o tamanho desejado */
+    text-align: top !important; /* Centraliza o texto horizontalmente */
+    margin: 0; /* Remove margens padrão */
+    margin-top: 5%; /* Espaçamento superior */
+}
+
+/*Adicionar fonte e tamanho do texto inicial, centralizar ele ao meio da tela, como texto inicial*/
+/* Estilização do carrossel */
+#Carrosel_img_aba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#Carrosel_img_aba .carousel-inner {
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    width: 100%;
+}
+
+#Carrosel_img_aba .carousel-item {
+    flex: 0 0 33.33%; /* Define que cada item ocupa 1/3 do container */
+    scroll-snap-align: start;
+    display: inline-block;
+    position: relative; /* Necessário para posicionar a legenda dentro da imagem */
+}
+#Carrosel_img_aba img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#Carrosel_img_aba .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*Edição do rodapé da página*/
+footer {
+    background-color: #c6a270;
+    color: black;
+    text-align: center;
+    height: 5%;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
