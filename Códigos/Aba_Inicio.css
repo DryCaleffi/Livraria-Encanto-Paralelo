@@ -7,25 +7,26 @@ Aba de inicio
 
 /*Adiciona no "corpo do site a imagem, como o protótipo*/
 body {
-    background-image: url('imagens/transferir.jpeg'); /* Caminho da imagem, link da imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a tela ou seja ele expandi para toda a tela */
-    background-position: center; /* Centraliza a imagem, o eixo dela ficar correto */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    height: 100%; /* Garante que o fundo ocupe toda a altura da tela */
+    background-image: url('imagens/Imagem_frente_Livraria_editada.png'); /* Caminho da imagem, link da imagem, nesse caso a imagem está salva no computador */
+    background-size: cover; /* Faz a imagem cobrir toda a tela ou seja ele expandi para toda a tela, ocupando todo o espaço */
+    background-position: center; /* Centraliza a imagem, o eixo dela ficar correto no centro */
+    background-repeat: no-repeat; /* Impede que a imagem se repita e dupliqe ao longo da rolagem da página */
+    height: 100%; /* Garante que o fundo ocupe toda a altura da tela independe do tamanho da tela*/
     margin: 0; /* Remove margens padrão */
-    
 }
+
 /*Adicionando aba com a cor preta com 50% de opacidade, para que fique um pouco mais escura*/
-body::before {
-    content: ""; /* Elemento vazio */
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
-    z-index: -1; /* Mantém atrás do conteúdo */
-}
+    body::before {
+        content: ""; /* Elemento vazio */
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
+        z-index: -1; /* Mantém atrás do conteúdo */
+    }                
+    
 
 /* Edição da Barra superior fixa */
 .top-bar {
