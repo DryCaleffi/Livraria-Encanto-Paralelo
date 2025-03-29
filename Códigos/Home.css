@@ -6,7 +6,7 @@ Aba de estilização do site da Livraria Encanto Paralelo
 
 /*Adiciona no "corpo do site a imagem de fundo*/
 body {
-    background-image: url('imagens/Imagem_frente_Livraria_editada.png'); /* Caminho da imagem, link da imagem, nesse caso a imagem está salva no computador */
+    background-image: url('./imagens/Livraria_frente.png'); /* Caminho da imagem, link da imagem, nesse caso a imagem está salva no computador */
     background-size: cover; /* Faz a imagem cobrir toda a tela ou seja ele expandi para toda a tela, ocupando todo o espaço */
     background-position: center; /* Centraliza a imagem, o eixo dela ficar correto no centro */
     background-repeat: no-repeat; /* Impede que a imagem se repita e dupliqe ao longo da rolagem da página */
