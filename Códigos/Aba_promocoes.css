@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #d2b48c; /* Cor do fundo externo */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.coluna {
+    flex: 1;
+    padding: 20px;
+}
+
+.centro {
+    flex: 2;
+    background-color: #c69c6d;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 600px; /* Define uma altura mínima */
+    font-family:  comorant garamond;
+    color: #fff; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+.formcadastr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family:  comorant garamond;
+}

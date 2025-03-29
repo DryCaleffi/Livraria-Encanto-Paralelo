@@ -7,25 +7,21 @@ Aba de inicio
 
 /*Adiciona no "corpo do site a imagem, como o protótipo*/
 body {
-    background-image: url('./imagens/Livraria_frente.png'); /* Caminho da imagem, link da imagem, nesse caso a imagem está salva no computador */
-    background-size: cover; /* Faz a imagem cobrir toda a tela ou seja ele expandi para toda a tela, ocupando todo o espaço */
-    background-position: center; /* Centraliza a imagem, o eixo dela ficar correto no centro */
-    background-repeat: no-repeat; /* Impede que a imagem se repita e dupliqe ao longo da rolagem da página */
-    height: 100%; /* Garante que o fundo ocupe toda a altura da tela independe do tamanho da tela*/
-    margin: 0; /* Remove margens padrão */
+    background-color: #c6a270; /* Cor de fundo externo */
+    position: relative; /* Adicionado para que o pseudo-elemento fique sobre o fundo */
 }
 
-/*Adicionando aba com a cor preta com 50% de opacidade, para que fique um pouco mais escura*/
-    body::before {
-        content: ""; /* Elemento vazio */
-        position: absolute; 
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
-        z-index: -1; /* Mantém atrás do conteúdo */
-    }                
+/* Sobreposição escura */
+body::before {
+    content: ""; /* Elemento vazio */
+    position: fixed; /* Para cobrir toda a tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    z-index: 0; /* Mantém a camada acima do fundo do body */
+}
     
 
 /* Edição da Barra superior fixa */
@@ -170,12 +166,7 @@ body {
             text-align: center;
         }
 
-        /*editando o modal de Login*/
-        h2 {
-            font-size: 20px;
-            color: white !important;
-            margin-bottom: 20px;
-        }
+
         .Aba_Login {
             background: none; /* Remove o fundo */
             border: none; /* Remove a borda */
@@ -207,20 +198,25 @@ body {
             border-radius: 10px; /* Bordas arredondadas */
         }
 
+ .carousel-item img {
+            height: 90vh;  /* Mantém a altura fixa */
+            width: auto;   /* Mantém a largura proporcional */
+            max-width: 80%;
+            object-fit: contain; /* Mantém a imagem sem cortes */
+            display: block;
+            margin: auto;  /* Centraliza no carrossel */
+        }
 
-
-/*Adicionar fonte e tamanho do texto inicial, centralizar ele ao meio da tela, como texto inicial*/
-h1 {
-    font-family: 'Cormorant Garamond', serif;
-    color: #FFFFFF !important; /* Cor do texto */
-    font-size: 320%;  /* Ajuste para o tamanho desejado */
-    text-align: top !important; /* Centraliza o texto horizontalmente */
-    margin: 0; /* Remove margens padrão */
-    margin-top: 5%; /* Espaçamento superior */
-}
-
-/*Adicionar fonte e tamanho do texto inicial, centralizar ele ao meio da tela, como texto inicial*/
-
+        .carousel-caption {
+            position: absolute;
+            bottom: 0; /* Mantém o texto na parte inferior da imagem */
+            transform: translateX(-50%); /* Centraliza horizontalmente */
+            width: 100%; /* Ocupa toda a largura da imagem */
+            background: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido para legibilidade */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
 /*Edição do rodapé da página*/
 footer {
     background-color: #c6a270;
