@@ -5,18 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria Encanto Paralelo</title>
     <link rel="stylesheet" href="Aba_Inicio.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <body>
-    <!-- Cabeçalho com a descrição sobre a livraria -->
-    <header class="Description">
-            <div id="Aba_Inicio" class="tabcontent" style="display: block;">
-                <h1> Encanto Paralelo – Onde Cada Página é um Novo Mundo </h1>
-                
-    </header>
+
    
     <header class="top-bar"> <!--Barra do Topo-->
       <nav class="nav-bar">
@@ -69,9 +63,11 @@
               </li>
 
       </nav>
+      </header>
     
 <!-- Carrosel de imagens na aba de inicio -->
-    <div id="Carrosel_img_aba" class="carousel slide">
+ <main class="w-100 mt-3"> 
+    <div id="Carrosel_img_aba" class="carousel slide md-12">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -105,15 +101,16 @@
       </div>
     </div>
     <!-- Botões de controle do carrosel -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#Carrosel_img_aba" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#Carrosel_img_aba" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Próximo</span>
     </button>
   </div>
+</main>
    
   <!-- Rodapé da Página inicial -->
     <footer class="footer">
@@ -121,6 +118,7 @@
         <p>Desenvolvido por @Adryelle Calefi & Tabata Etiele</p>
     </footer>
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
