@@ -74,7 +74,7 @@ h1{
         }
 
         /* Estilo dos links de navegação */
-         .nav-link {
+        .nav-link {
             text-decoration: none; /* Remove o sublinhado do texto */
             color: white !important; /* Cor do texto */
             font-family: 'Cormorant Garamond', serif;
@@ -85,15 +85,13 @@ h1{
             justify-content: center; /* Centraliza horizontalmente */
             height: 100%; /* Garante que ocupe toda a altura do item */
             line-height: normal; /* Evita que o texto fique desalinhado */
-            margin: 15% ;
         }
-       
         /* Efeito de hover e item ativo */
-         .nav-link:hover, .nav-link.active {
+        .nav-link:hover, .nav-link.active {
             background-color: #734e27; /* Cor de fundo ao passar o mouse */
-            border-radius: 30%; /* Borda arredondada */
-            
+            border-radius: 50%; /* Borda arredondada */
         }
+
 
         /* Estilo da imagem (ícone) */
          .nav-icon {
