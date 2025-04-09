@@ -82,41 +82,34 @@
 
   <div class="container">
       <div class="coluna"></div>
-      <div class="coluna centro">Realize seu cadastro para receber promoções
+      <div class="coluna centro">
+        <h2>Realize seu cadastro para receber promoções</h2>
         
         <form id="formCadastro">
           <!-- Nome -->
           <label for="nome">Nome:</label>
           <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+          <span class="erro" id="erro-nome"></span>
   
           <!-- E-mail -->
           <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
-  
+          <input type="email" id="email-secundario" name="email" required placeholder="Digite seu e-mail">
+          <span class="erro" id="erro-email"></span>
+          
           <!-- CPF -->
           <label for="cpf">CPF:</label>
-          <input type="text" id="cpf" name="cpf" required placeholder="Informe CPF">
-  
+          <input type="number" id="cpf" name="cpf" required placeholder="Informe CPF">
+          <span class="erro" id="erro-cpf"></span>
+
           <!-- Telefone -->
           <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
-  
-          <!-- Endereço -->
-          <label for="endereco">Endereço</label>
-          <textarea id="endereco" name="" rows="1" placeholder="Endereço:"></textarea>
-
-          <!-- Bairro -->
-          <label for="Bairro">Bairro:</label>
-          <textarea id="bairro" name="bairro" rows="1" placeholder="Bairro:"></textarea>
+          <input type="number" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+          <span class="erro" id="erro-telefone"></span>
           
-          <!-- Cidade -->
-          <label for="cidade">Cidade:</label>
-          <input type="text" id="cidade" name="cidade" required placeholder="Cidade">
-         
-  
-   '    <!-- Botão de Envio -->
-        <button type="submit">Enviar</button>
+    <!-- Botão de Envio -->
+        <button type="submit" onclick="">Enviar</button>
         </form>
+        <div id="mensagem-cadastro" class="mensagem" style="display: none;"></div>
       </div>
       <div class="coluna"></div>
   </div>
