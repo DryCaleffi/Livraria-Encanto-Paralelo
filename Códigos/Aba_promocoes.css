@@ -48,12 +48,14 @@ body {
     background-color: #c69c6d;
     padding: 60px;
     border-radius: 10px;
-    min-height: 600px; /* Define uma altura mínima */
-    font-family:  comorant garamond;
-    color: #fff; /* Cor do texto */
-    font-size: 18px; /* Tamanho da fonte */
-    text-align: center; /* Centraliza o texto */
-}
+    min-height: 600px;
+    font-family: comorant garamond;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    width: 100%; /* Garante largura padrão no desktop */
+  }
+  
 #formCadastro{
     display: flex;
     flex-direction: column;
@@ -63,29 +65,51 @@ body {
     font-family:  comorant garamond;
     padding: 10px 50px;
     gap: 5px; /* Adiciona espaçamento entre os elementos */
+    border-radius: 10px ;
 }
 #formCadastro button {
     margin-top: 20px;
     padding: 5px;
+
 }
-.mensagem {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
+
+#btnEnviar{
+    background-color: #73c670;
+    color: white;
+    border: none;
     border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
+    width: 50% ;
 }
-
-.mensagem-erro {
-    color: #721c24;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-}
-
-.mensagem-sucesso {
-    color: #155724;
-    background-color: #d4edda;
-    border: 1px solid #c3e6cb;
-}
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .coluna:not(.centro) {
+      display: none; /* Esconde apenas as colunas laterais */
+    }
+  
+    .centro {
+      flex: none;
+      width: 90%; /* Ajusta para mobile */
+      margin: 0 auto;
+      padding: 30px 20px;
+      min-height: auto;
+    }
+  
+    #formCadastro {
+      width: 100%;
+      padding: 0;
+    }
+  
+    #formCadastro input {
+      width: 100%;
+    }
+  
+    .footer {
+      text-align: center;
+      padding: 20px;
+    }
+  }
 

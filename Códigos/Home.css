@@ -30,7 +30,7 @@ body {
 h1{
     font-family: 'Cormorant Garamond', serif;
     color : white !important; 
-    font-size: 420%;  /* Ajuste para o tamanho desejado */
+    font-size: 540%;  /* Ajuste para o tamanho desejado */
     text-align: center !important  ; /* Centraliza o texto horizontalmente */
     display: flex;/* Garante que o conteúdo da barra use flexbox */
   

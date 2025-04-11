@@ -47,4 +47,29 @@ body::before {
             text-align: center;
         }
 
-
+          
+        @media (max-width: 768px) {
+            .custom-caption h5 {
+              font-size: 1rem;
+            }
+          
+            .custom-caption p {
+              font-size: 0.875rem;
+            }
+          
+            .carousel-caption {
+              position: absolute;
+              width: 100%;
+              text-align: center;
+              transform: translateX(-15%);
+              bottom: 10px; /* afasta do final da imagem */
+              background-color: rgba(0, 0, 0, 0.5); /* fundo semitransparente */
+              padding: 10px;
+              border-radius: 10px;
+            }
+          
+            .carousel-item img {
+              width: 100%;
+              height: auto;
+            }
+          }
