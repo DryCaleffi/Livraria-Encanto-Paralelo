@@ -54,6 +54,9 @@
             background-color: #734e27; /* Cor de fundo ao passar o mouse */
             border-radius: 50%; /* Borda arredondada */
         }
+       #inicio{
+            margin-top: 18% !important; /* Espaçamento entre os itens */
+        }
 
 
         /* Estilo da imagem (ícone) */
